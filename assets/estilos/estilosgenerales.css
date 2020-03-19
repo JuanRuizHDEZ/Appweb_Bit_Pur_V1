@@ -1,0 +1,192 @@
+/* segundo menu principal*/
+.nav-side-menu {
+  overflow: auto;
+  font-family: verdana;
+  font-size: 14px;
+  font-weight: 150;
+  background: url(https://localhost/Appweb_Bit_Pur_V1/assets/imagenes/fondo.jpg) no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 1px;
+  width: 18%;
+  height: 100%;
+  color: white;
+}
+.nav-side-menu .brand {
+  /*background: url(https://localhost/CCEC_3.0/assets/imagenes/fondo.jpg);*/
+  line-height: 50px;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+}
+
+
+.nav-side-menu .toggle-btn {
+  display: none;
+}
+.nav-side-menu ul,
+.nav-side-menu li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  line-height: 35px;
+  cursor: pointer;
+}
+/*.nav-side-menu ul :not(collapsed) .arrow:before,
+.nav-side-menu li :not(collapsed) .arrow:before {
+  font-family: FontAwesome;
+  content: "\f078";
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: middle;
+  float: right;
+}*/
+.nav-side-menu ul .active,
+.nav-side-menu li .active {
+/*  border-left: 3px solid #000000;
+  background-color: #7BC0FF;*/
+}
+
+.nav-side-menu ul .sub-menu li.active,
+.nav-side-menu li .sub-menu li.active {
+    /*activo fondo submenu*/
+    background-color: #0287CA;
+}
+.nav-side-menu ul .sub-menu li.active a,
+.nav-side-menu li .sub-menu li.active a {
+    /*activo color letra submenu*/
+  color: white;
+}
+.nav-side-menu ul .sub-menu li,
+.nav-side-menu li .sub-menu li {
+    /*color del submenu*/
+  background-color: #038CD1;
+  border: none;
+  line-height: 28px;
+  border-bottom: 1px solid #33D6FF;
+  margin-left: 0px;
+}
+.nav-side-menu ul .sub-menu li:hover,
+.nav-side-menu li .sub-menu li:hover {
+    /*color hover*/
+  background-color: #00A3E1;
+}
+/*.nav-side-menu ul .sub-menu li:before,
+.nav-side-menu li .sub-menu li:before {
+  font-family: FontAwesome;
+  content: "\f105";
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: middle;
+}*/
+
+
+.nav-side-menu li {
+  padding-left: 15px;
+  border-left: 3px solid #000000;
+  border-bottom: 1px solid #33D6FF;
+}
+.nav-side-menu li a {
+  text-decoration: none;
+  color: white;
+}
+.nav-side-menu li a i {
+  padding-left: 10px;
+  width: 20px;
+  padding-right: 20px;
+}
+.nav-side-menu li:hover {
+    /*color hover*/
+  border-left: 3px solid #00A3E1;
+  background-color: #00A3E1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+@media (max-width: 767px) {
+  .nav-side-menu {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .nav-side-menu .toggle-btn {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 10 !important;
+    padding: 3px;
+    background-color: #33D6FF;
+    color: #000;
+    width: 40px;
+    text-align: center;
+  }
+  .brand {
+    text-align: left !important;
+    font-size: 22px;
+    padding-left: 20px;
+    line-height: 50px !important;
+  }
+}
+@media (min-width: 767px) {
+  .nav-side-menu .menu-list .menu-content {
+    display: block;
+  }
+}
+body {
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+#divprincipal{
+    margin-top: 7.5%;
+    margin-left: 25%;
+}
+
+.color_fondo{
+    background-color: #F2F3F4;
+    font-family: sans-serif;
+}
+#div-img{
+    width: 100%;
+    height: 90%;
+}
+.img_cambia{
+    width : 100%;
+    height : 100%;
+}
+
+
+
+
+/* cambiar el hover del boostrap */
+.nav-superior nav ul li a{
+  color: white !important;
+}
+.nav-superior nav ul li:hover{
+  background-color: #00A3E1 !important;
+}
+.navbar-nav li a:hover, .navbar-nav li.active a {
+  background-color: #00A3E1 !important;
+}
+
+
+
+
+/* para el hr(separador) no se usa */
+hr.colored {
+  border: 0;   /* in order to override TWBS stylesheet */
+  height: 3px;
+
+  background: -moz-linear-gradient(left, rgba(0,0,0) 0%, rgba(0,0,0) 100%);  /* FF3.6+ */
+  background: -webkit-linear-gradient(left, rgba(0,0,0) 0%, rgba(0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, rgba(0,0,0) 0%, rgba(0,0,0) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, rgba(0,0,0) 0%, rgba(0,0,0) 100%); /* IE10+ */
+  background: linear-gradient(to left, rgba(0,0,0) 0%, rgba(0,0,0) 100%); /* W3C */
+}
